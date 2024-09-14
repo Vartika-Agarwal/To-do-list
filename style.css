@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+body{
+    background-color: #b69dae;
+}
+.container{
+    width: 40vw;
+    max-height: 70vh;
+   background-color: white;
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 70px;
+}
+.text1{
+    color: #420554;
+    margin: 20px ;
+    display: flex;
+    gap: 10px;
+}
+.text1 img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+.text2{
+    padding-left: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    outline: none;
+}
+.text2 input[type="text"]{
+    flex: 1;
+    border:none;
+    border-radius: 28px;
+    height: 42px;
+    background-color: rgba(211, 211, 211, 0.311);
+    font-size: 13px;
+    padding-left: 20px;
+    position: relative;
+    margin-right: 40px;
+    outline: none;
+}
+.text2 button{
+    height: 42px;
+    padding: 0px 27px;
+    font-size: 18px;
+    border-radius: 28px;
+    border: none;
+    outline: none;
+    background-color:#b571b4 ;
+    color: rgb(255, 252, 252);
+    cursor: pointer;
+    position: absolute;
+    right: 396px;
+    
+}
+.text2 button:hover{
+    background-color: #a07aaa;
+}
+.list li{
+    margin-left: 40px;
+    padding-bottom: 12px;
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+.list li::before{
+    content: "";
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    top:6px;
+    left: -22px;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+li.checked{
+    text-decoration: line-through;
+    color: #555;
+
+}
+ li.checked::before{
+    background-image: url(images/checked.png);
+}
+ul li span{
+    position: absolute;
+    right: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+    height: 27px;
+    width: 27px;
+text-align: center;
+
+}
+
+
+
+
